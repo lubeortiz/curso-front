@@ -7,7 +7,6 @@ import RecetasPage from './components/pages/RecetasPage';
 import MisRecetasPage from './components/pages/MisRecetasPage';
 import NovedadesPage from './components/pages/NovedadesPage';
 import ContactoPage from './components/pages/ContactoPage';
-import LoginPage from './components/pages/LoginPage';
 
 function App() {
   return (
@@ -16,8 +15,7 @@ function App() {
       <BrowserRouter>
         <Nav/>
         <Routes>
-          <Route path="/" element={<LoginPage/>} />
-          <Route path="login" element={<LoginPage/>} />
+          <Route path="/" element={<RecetasPage/>} />
           <Route path="inicio" element={<RecetasPage/>} />
           <Route path="mis-recetas" element={<MisRecetasPage/>} />
           <Route path="novedades" element={<NovedadesPage/>} />
