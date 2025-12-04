@@ -25,7 +25,7 @@ const Header = () => {
       
       {usuario && (
         <div className='d-flex align-items-center me-4'>
-          <a className="btn btn-primary" href='#' onClick={cerrarSesion}>
+          <a className="btn btn-primary" href='/login' onClick={cerrarSesion}>
             Cerrar sesión <i className="bi bi-box-arrow-right"></i>
           </a>
         </div>
