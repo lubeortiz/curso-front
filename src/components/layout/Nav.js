@@ -1,4 +1,3 @@
-// Nav.jsx
 import React from 'react';
 
 const isActive = (currentUrl, targetPath) => {
