@@ -20,7 +20,7 @@ const Login = ({ initialError }) => {
         e.preventDefault();
         setError(false);
         try {
-            const response = await axios.post('http://localhost:3000/api/admin/login', { usuario, password });
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/admin/login`, { usuario, password });
             if (response.data.success) {
                 console.log('Login exitoso. Redirigiendo...');
                 sessionStorage.setItem('id', response.data.user.id);

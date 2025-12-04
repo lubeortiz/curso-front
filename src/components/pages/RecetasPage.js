@@ -16,7 +16,7 @@ const RecetasPage = () => {
 
     const cargarRecetas = async () => {
       setLoading(true);
-      const response = await axios.get('http://localhost:3000/api/recetas');
+      const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/recetas`);
       setRecetas(response.data);
       setLoading(false);
     };
